@@ -9,7 +9,6 @@ from torch import nn
 import pandas as pd
 import numpy as np
 from model import RITA_s
-from sklearn import model_selection, metrics
 from transformers import get_linear_schedule_with_warmup, AdamW
 from collections import defaultdict
 
@@ -80,7 +79,7 @@ def run():
         },
     ]
     
-    num_train_steps = int(len(df_train) / (config.TRAIN_BATCH_SIZE * config.ACCUMULATION_STEPS) * (config.EPOCHS + 30) * 2)
+    num_train_steps = int(len(df_train) / (config.TRAIN_BATCH_SIZE * config.ACCUMULATION_STEPS * config.EPOCHS))
     optimizer = AdamW(optimizer_parameters, lr=2e-5, eps=1e-8, no_deprecation_warning = True)
 
     scheduler = get_linear_schedule_with_warmup(
