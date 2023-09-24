@@ -17,7 +17,7 @@ pip install transformers
     
 ## Usage
 
-```cmd
+```bash
 cd sda
 python3 train.py
 ```
