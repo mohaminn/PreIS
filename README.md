@@ -18,7 +18,7 @@ pip install transformers
 ## Usage
 
 ```bash
-cd sda
+cd PreIS
 python3 train.py
 ```
 
