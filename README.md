@@ -1,5 +1,5 @@
 
-# SDA: A Novel Data Augmentation Approach Using Protein Language Models for Influenza A Subtype Prediction
+# PreIS: A Novel Data Augmentation Approach Using Protein Language Models for Influenza A Subtype Prediction
 
 ## Description
 
