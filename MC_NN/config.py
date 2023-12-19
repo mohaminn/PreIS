@@ -1,0 +1,11 @@
+RANDOM_SEED = 42
+DEVICE = "cuda"
+MAX_LEN = 512
+TRAIN_BATCH_SIZE = 8
+VALID_BATCH_SIZE = 8
+EPOCHS = 200
+ACCUMULATION_STEPS = 2
+TRAIN_DATA_PATH = "../Data/train.csv"
+VLID_DATA_PATH = "../Data/valid.csv"
+TEST_DATA_PATH = "../Data/test.csv"
+SAVE_MODEL_TO = ""
